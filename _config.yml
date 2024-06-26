@@ -20,7 +20,7 @@ rtl                      : # true, false (default) # turns direction of the page
 title                    : "Site Title"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
+name                     : "Sunghak HEO"
 description              : "An amazing website."
 url                      : "https://Sunghak222.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
@@ -113,11 +113,11 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "Sunghak HEO"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
-  email            :
+  bio              : "Korean. Currently studying in Hong Kong."
+  location         : "Hong Kong"
+  email            : "sunghakheo@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
