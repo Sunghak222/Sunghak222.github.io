@@ -17,8 +17,8 @@ minimal_mistakes_skin    : "contrast" # "default", "air", "aqua", "contrast", "d
 # Site Settings
 locale                   : "en-US"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : "Records"
-title_separator          : "-"
+title                    : "Records|of"
+title_separator          : "|"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Sunghak HEO"
 description              : "Anything I learned through my life, mainly about programming, is going to be documented."
