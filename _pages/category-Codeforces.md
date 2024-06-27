@@ -1,7 +1,7 @@
 ---
 title: "Codeforces"
 layout: archive
-permalink: /codeforces
+permalink: /Codeforces
 ---
 
 
