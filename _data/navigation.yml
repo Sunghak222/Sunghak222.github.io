@@ -14,7 +14,7 @@ docs:
   - title: "Algorithms"
     children:
       - title: "Codeforces"
-        url: Codeforces/
+        url: /Codeforces/
       - title: "Baekjoon"
-        url: Baekjoon/
+        url: /Baekjoon/
       
