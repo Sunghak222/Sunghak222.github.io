@@ -17,4 +17,7 @@ docs:
         url: /Codeforces/
       - title: "Baekjoon"
         url: /Baekjoon/
-      
+
+counts:
+  - title: "Category"
+    use: true 
