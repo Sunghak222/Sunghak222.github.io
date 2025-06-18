@@ -1,6 +1,7 @@
 ---
 title: "1167 Diameter of Tree"
 date: 2025-06-18
+layout: post
 ---
 
 Diameter of Tree: the longest distance between the nodes in tree
