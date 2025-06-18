@@ -1,2 +1,2 @@
 # 👋 Welcome
-This is my cozy dev blog.
+This is my dev blog.
