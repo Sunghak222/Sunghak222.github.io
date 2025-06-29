@@ -41,7 +41,7 @@ Or you need more control over the traversal process.
 
 Code: BFS-Based
 -------------
-'''cpp
+```cpp
 int n, m;
 vector<vector<int>> graph;
 vector<int> indegree;
@@ -102,11 +102,11 @@ int main()
     topologicalSort();
     return 0;
 }
-'''
+```
 
 Code: DFS-Based
 -------------
-'''cpp
+```cpp
 #include <iostream>
 #include <vector>
 #include <stack>
@@ -169,4 +169,4 @@ int main() {
 
     return 0;
 }
-'''
+```
