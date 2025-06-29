@@ -12,6 +12,12 @@ What is it?
 Topological sorting is a way to arrange tasks in order.
 It helps you figure out what needs to be done first, and what should come after.
 In other words, it sorts things step by step — based on which tasks depend on others.
+It can be also used to detect cycles in a directed graph.
+
+Conditions for Using Topological Sort
+-------------
+1. The graph must be a directed graph
+2. The graph must be acyclic
 
 2 Ways to Implement
 -------------
@@ -70,7 +76,6 @@ void topologicalSort()
         }
     }
 
-    // 사이클 여부 판단
     if (result.size() < n) 
     {
         cout << "Cycle detected!" << '\n';
@@ -170,3 +175,4 @@ int main() {
     return 0;
 }
 ```
+
