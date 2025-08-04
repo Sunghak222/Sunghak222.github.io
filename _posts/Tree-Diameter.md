@@ -1,5 +1,5 @@
 ---
-title: "1167 Diameter of Tree"
+title: "1167 Tree Diameter"
 date: 2025-06-18
 layout: post
 categories: [Baekjoon, Graph]
