@@ -1,0 +1,48 @@
+---
+title: "[BOJ] 1234 - Problem Title"
+date: 2025-08-05 23:40:00 +0900
+categories: [BOJ, Algorithm Category]
+tags: [BOJ, Algorithm, TagName]
+---
+
+## Problem Description
+
+Briefly describe the problem.  
+Include key constraints, example inputs/outputs, or edge cases if relevant.
+
+<br>
+
+## Approach
+
+- Algorithm used: BFS / DFS / DP / Binary Search, etc.  
+- Main idea:
+  - e.g., Traverse the tree twice using DFS to find the diameter.
+  - e.g., Define `dp[i][j]` as the minimum cost to...
+
+<br>
+
+## Solution Code (C++ / Java / Python)
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    cout << "Hello BOJ" << endl;
+    return 0;
+}
+```
+## Time Complexity
+
+- **O(N log N)**
+- Explanation: sorting takes O(N log N), then binary search adds log N per query.
+
+## References
+
+- [Problem Link](#)
+- [Related Problem](#)
+
+## Summary
+
+- What I learned from this problem  
+- Things I want to improve
