@@ -9,7 +9,7 @@ tags: [DFS, Tree, Graph]
 Topology Sort
 =============
 
-What is it?
+Concepts
 -------------
 Topological sorting is a way to arrange tasks in order.
 It helps you figure out what needs to be done first, and what should come after.
@@ -26,7 +26,7 @@ Conditions for Using Topological Sort
 There are two common ways to implement topological sort: BFS-based and DFS-based approaches. 
 Both methods solve the same problem, but they work in different ways and are useful in different situations.
 
-BFS-based
+1. BFS-based
 -------------
 This is the most popular method, especially in coding interviews and practical problems.
 
@@ -101,7 +101,7 @@ int main()
 }
 ```
 
-DFS-based
+2. DFS-based
 -------------
 This method uses depth-first search and works by visiting all neighbors before finishing the current node.
 You run DFS on all unvisited nodes.
