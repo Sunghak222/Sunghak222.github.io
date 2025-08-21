@@ -52,6 +52,7 @@ The command below finds files with a user bandit7, group bandit6, and size 33 by
 ```bash
 find / -user bandit7 -group bandit6 -size 33c
 ```
+
 | Option        | Description                                                                         | Example                               |
 | ------------- | ----------------------------------------------------------------------------------- | ------------------------------------- |
 | `-name`       | Search by file name (supports wildcards `*` and `?`)                                | `find . -name "file.txt"`             |
@@ -103,8 +104,8 @@ find . -size 1033c ! -executable -type f
 ```
 This command finds files with size 1033 bytes and no executable.
 
-`-type f`: not a directory.
-`-size 1033c`: 1033 bytes. `c` means byte.
+`-type f`: not a directory.  
+`-size 1033c`: 1033 bytes. `c` means byte.  
 
 ## Bandit Level 6 -> 7
 ---
@@ -112,12 +113,12 @@ This command finds files with size 1033 bytes and no executable.
 find / -user bandit7 -group bandit6 -size 33c 2>/dev/null
 ```
 
-`/`: the whole files from root
+`/`: the whole files from root  
 
-`stdout`: file descripter 1
-`stderr`: file descripter 2
-`/dev/null`: A trashcan
-`2>/dev/null`: Throw all the error messages away to trashcan
+`stdout`: file descripter 1  
+`stderr`: file descripter 2  
+`/dev/null`: A trashcan  
+`2>/dev/null`: Throw all the error messages away to trashcan  
 
 ## Bandit Level 7 -> 8
 ---
@@ -135,6 +136,7 @@ grep 'millionth' data.txt
 
 #### Commonly Used Options
 ---
+
 | Option   | Description                                  | Example                      |                 |
 | -------- | -------------------------------------------- | ---------------------------- | --------------- |
 | `-c`     | Prints the **number of matching lines**      | `grep -c 'foo' data.txt`     |                 |
