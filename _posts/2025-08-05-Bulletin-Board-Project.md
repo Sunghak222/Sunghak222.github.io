@@ -22,30 +22,23 @@ I followed a traditional MVC pattern with Entity, Repository, Service, and Contr
 
 
 ## Main Challenges
-When I first started this project, I didn’t know much about JavaScript.  
-Since JavaScript is mainly used to update HTML, I thought I could do everything with Thymeleaf instead.  
-Thymeleaf lets you insert data into HTML on the server side, so I believed it was enough.
 
-At the beginning, things worked fine without JavaScript.  
-I used Spring Boot and Thymeleaf to build the website, and I could show different content depending on the user’s request.  
-But later, I started to face some problems.
+When I first started this project, I didn’t know much about JavaScript. Since JavaScript is mainly used to update HTML, I thought I could do everything with Thymeleaf instead. Thymeleaf lets you insert data into HTML on the server side, so I believed it was enough.
 
-One problem was that HTML forms only support GET and POST methods.  
-I couldn’t easily use PUT or DELETE, which are important for RESTful APIs.  
-Another problem was that the whole page reloaded every time the user clicked something.    
-This made the website slower and less modern.
+At the beginning, things worked fine without JavaScript. I used Spring Boot and Thymeleaf to build the website, and I could show different content depending on the user’s request. But later, I started to face some problems.
 
-Also, it was hard to make dynamic features like filtering comments or editing posts without refreshing the whole page.  
-I realized that this would be very difficult without using JavaScript.
+One problem was that HTML forms only support GET and POST methods. I couldn’t easily use PUT or DELETE, which are important for RESTful APIs. Another problem was that the whole page reloaded every time the user clicked something. This made the website slower and less modern.
+
+Also, it was hard to make dynamic features like filtering comments or editing posts without refreshing the whole page. I realized that this would be very difficult without using JavaScript.
 
 ## Solution
-So I changed the project to use client-side rendering (CSR).  
-Now, the backend is only for the REST API, and the frontend uses static HTML and JavaScript.  
-The browser fetches the data and shows it without reloading the page.  
-This makes the website more interactive and better for users.
+
+So I changed the project to use client-side rendering (CSR). Now, the backend is only for the REST API, and the frontend uses static HTML and JavaScript. The browser fetches the data and shows it without reloading the page. This makes the website more interactive and better for users.
 
 ## Key Learnings
-Even though the change to Client-side rendering took me a while, it was a valuable experience for me to learn the significance of project planning and Javascript, the meaning of RESTful api, and the difference between Server-side and Client-side rendering.    
+
+Even though the change to Client-side rendering took me a while, it was a valuable experience for me to learn the significance of project planning and JavaScript, the meaning of RESTful API, and the difference between Server-side and Client-side rendering.
+ 
 
 ### Comparison: Server-side vs Client-side Rendering
 
