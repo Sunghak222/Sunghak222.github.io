@@ -6,11 +6,12 @@ tags: []
 ---
 
 ## Notes
+---
 This post is a note for my bandit studies to recall my memory.
 Please remember that it does not actually demonstrate how to solve bandit as these levels are so basic and many smart people have already explained very clearly on their blogs.
 
-## Bandit Level 0 -> 1
-
+## Bandit Level 0
+---
 This level is to learn how to log in to the server.
 You should use port 2220
 ```bash
@@ -23,7 +24,7 @@ exit
 ```
 
 ## Bandit Level 0 -> 1
-
+---
 To list files
 ```bash
 ls [option] [path]
@@ -45,7 +46,7 @@ cat [filepath]
 ```
 
 ## Bandit Level 1 -> 2
-
+---
 The command below finds files with a user bandit7, group bandit6, and size 33 bytes.
 
 ```bash
@@ -68,6 +69,7 @@ find / -user bandit7 -group bandit6 -size 33c
 | `-mindepth N` | Ignore matches until at least *N* levels deep                                       | `find . -mindepth 2 -name "*.txt"`    |
 
 ## Bandit Level 2 -> 3
+---
 This level is to learn how to search files with name with blank. 
 Linux shell recognizes spaces as separator, so you should put backslash to certain that there is a space in filename.
 
@@ -79,7 +81,7 @@ cat ./--spaces\ in\ this\ filename--
 ./ means a current directory.
 
 ## Bandit Level 3 -> 4
-
+---
 This concept is already covered in bandit level 0 -> 1. The option -a shows hidden files, which filename begins with `.`, such as .ssh, .git, .gitignore, and many others.
 
 ```bash
@@ -87,7 +89,7 @@ ls -a
 ```
 
 ## Bandit Level 4 -> 5
-
+---
 The command file also supports wildcards `*`.
 
 ```bash
@@ -95,7 +97,7 @@ file ./*
 ```
 
 ## Bandit Level 5 -> 6
-
+---
 ```bash
 find . -size 1033c ! -executable -type f
 ```
@@ -105,7 +107,7 @@ This command finds files with size 1033 bytes and no executable.
 `-size 1033c`: 1033 bytes. `c` means byte.
 
 ## Bandit Level 6 -> 7
-
+---
 ```bash
 find / -user bandit7 -group bandit6 -size 33c 2>/dev/null
 ```
@@ -118,18 +120,21 @@ find / -user bandit7 -group bandit6 -size 33c 2>/dev/null
 `2>/dev/null`: Throw all the error messages away to trashcan
 
 ## Bandit Level 7 -> 8
-
+---
 #### Usage
+---
 ```bash
 grep [options] "pattern" [file...]
 ```
 
 #### Example
+---
 ```bash
 grep 'millionth' data.txt
 ```
 
 #### Commonly Used Options
+---
 | Option   | Description                                  | Example                      |                 |
 | -------- | -------------------------------------------- | ---------------------------- | --------------- |
 | `-c`     | Prints the **number of matching lines**      | `grep -c 'foo' data.txt`     |                 |
