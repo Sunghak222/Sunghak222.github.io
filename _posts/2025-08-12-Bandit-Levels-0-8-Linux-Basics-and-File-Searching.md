@@ -7,21 +7,26 @@ tags: []
 
 ## Notes
 ---
-This post is a note for my bandit studies to recall my memory.
-Please remember that it does not actually demonstrate how to solve bandit as these levels are so basic and many smart people have already explained very clearly on their blogs.
+This post is my note for studying Bandit.
+It doesn’t show full solutions since these levels are basic and many good explanations already exist on other blogs.
 
 ## Bandit Level 0
 ---
-This level is to learn how to log in to the server.
-You should use port 2220
+This level is to learn how to log in to the server using SSH on port **2220**
+
 ```bash
 ssh bandit18@bandit.labs.overthewire.org -p 2220
 ```
 
-You can exit the server with the command below
+You can exit the server with the command below:
 ```bash
 exit
 ```
+
+### SSH
+---
+
+**SSH** (Secure Shell) is a protocol that helps you to securely connect to the remote server.
 
 ## Bandit Level 0 -> 1
 ---
@@ -71,8 +76,8 @@ find / -user bandit7 -group bandit6 -size 33c
 
 ## Bandit Level 2 -> 3
 ---
-This level is to learn how to search files with name with blank. 
-Linux shell recognizes spaces as separator, so you should put backslash to certain that there is a space in filename.
+This level teaches how to handle filenames containing spaces. 
+In Linux, spaces are treated as separators, so you need to escape them with a backslash (\) when accessing such filenames.
 
 ```bash
 cat spaces\ in\ this\ filename
@@ -123,19 +128,17 @@ find / -user bandit7 -group bandit6 -size 33c 2>/dev/null
 ## Bandit Level 7 -> 8
 ---
 #### Usage
----
+
 ```bash
 grep [options] "pattern" [file...]
 ```
 
 #### Example
----
 ```bash
 grep 'millionth' data.txt
 ```
 
 #### Commonly Used Options
----
 
 | Option   | Description                                  | Example                      |                 |
 | -------- | -------------------------------------------- | ---------------------------- | --------------- |
