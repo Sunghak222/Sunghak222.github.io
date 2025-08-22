@@ -12,8 +12,10 @@ It doesn’t show full solutions since these levels are basic and many good expl
 
 ## Bandit Level 0
 ---
+### Goal
 This level is to learn how to log in to the server using SSH on port **2220**
 
+### Commands
 ```bash
 ssh bandit18@bandit.labs.overthewire.org -p 2220
 ```
@@ -23,8 +25,8 @@ You can exit the server with the command below:
 exit
 ```
 
-### SSH
----
+### Further Learnings
+#### SSH
 
 **SSH** (Secure Shell) is a protocol that helps you to securely connect to the remote server.
 
