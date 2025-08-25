@@ -1,5 +1,5 @@
 ---
-title: "Bandit Levels 0-8: Linux Basics and File Searching"
+title: "Bandit Levels 0-8: Notes"
 date: 2025-08-12
 categories: [Linux]
 tags: []
@@ -32,10 +32,14 @@ exit
 
 ## Bandit Level 0 -> 1
 ---
+
+### Commands
 To list files
 ```bash
 ls [option] [path]
 ```
+
+#### Commonly Used Options
 
 | Option | Description                                                                                | Example  |
 | ------ | ------------------------------------------------------------------------------------------ | -------- |
@@ -54,11 +58,15 @@ cat [filepath]
 
 ## Bandit Level 1 -> 2
 ---
+
+### Commands
 The command below finds files with a user bandit7, group bandit6, and size 33 bytes.
 
 ```bash
 find / -user bandit7 -group bandit6 -size 33c
 ```
+
+#### Commonly Used Options
 
 | Option        | Description                                                                         | Example                               |
 | ------------- | ----------------------------------------------------------------------------------- | ------------------------------------- |
@@ -78,9 +86,12 @@ find / -user bandit7 -group bandit6 -size 33c
 
 ## Bandit Level 2 -> 3
 ---
+
+### Goal
 This level teaches how to handle filenames containing spaces. 
 In Linux, spaces are treated as separators, so you need to escape them with a backslash (\) when accessing such filenames.
 
+### Commands
 ```bash
 cat spaces\ in\ this\ filename
 cat ./--spaces\ in\ this\ filename-- 
@@ -90,14 +101,19 @@ cat ./--spaces\ in\ this\ filename--
 
 ## Bandit Level 3 -> 4
 ---
+
+### Notes
 This concept is already covered in bandit level 0 -> 1. The option -a shows hidden files, which filename begins with `.`, such as .ssh, .git, .gitignore, and many others.
 
+### Commands
 ```bash
 ls -a
 ```
 
 ## Bandit Level 4 -> 5
 ---
+
+### Commands
 The command file also supports wildcards `*`.
 
 ```bash
@@ -106,6 +122,8 @@ file ./*
 
 ## Bandit Level 5 -> 6
 ---
+
+### Commands
 ```bash
 find . -size 1033c ! -executable -type f
 ```
@@ -116,6 +134,8 @@ This command finds files with size 1033 bytes and no executable.
 
 ## Bandit Level 6 -> 7
 ---
+
+### Commands
 ```bash
 find / -user bandit7 -group bandit6 -size 33c 2>/dev/null
 ```
@@ -129,18 +149,19 @@ find / -user bandit7 -group bandit6 -size 33c 2>/dev/null
 
 ## Bandit Level 7 -> 8
 ---
-#### Usage
+
+### Commands
 
 ```bash
 grep [options] "pattern" [file...]
 ```
 
-#### Example
+### Example
 ```bash
 grep 'millionth' data.txt
 ```
 
-#### Commonly Used Options
+### Commonly Used Options
 
 | Option   | Description                                  | Example                      |                 |
 | -------- | -------------------------------------------- | ---------------------------- | --------------- |
