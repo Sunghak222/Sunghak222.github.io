@@ -3,6 +3,7 @@ title: "Codeforces Round 1035 C: A Good Problem"
 date: 2025-08-27
 categories: [Algorithm, Codeforces]
 tags: [Bitmasks, Constructive Algorithms]
+mathjax: true
 ---
 
 ## Problem Description
@@ -172,10 +173,13 @@ int main()
     }
 }
 ```
-## Time Complexity
 
-- **O(N log N)**
-- Explanation: sorting takes O(N log N), then binary search adds log N per query.
+## Feelings
+It has been a long time that I have not solved bitmask. It was literally a good problem that recall my memory and reactivate my brain. It was close that I could solve this problem by myself. I should practice regularly.
+## Time Complexity
+- getMSBauto(): O(1)
+- solve(): O(1)
+- **O(1)**
 
 ## References
 - [Problem Link](https://codeforces.com/contest/2119/problem/C)
