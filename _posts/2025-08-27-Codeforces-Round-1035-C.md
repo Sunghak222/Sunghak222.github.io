@@ -3,7 +3,7 @@ title: "Codeforces Round 1035 C: A Good Problem"
 date: 2025-08-27
 categories: [Algorithm, Codeforces]
 tags: [Bitmasks, Constructive Algorithms]
-mathjax: true
+math: true
 ---
 
 ## Problem Description
