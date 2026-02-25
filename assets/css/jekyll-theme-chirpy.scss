@@ -1,3 +1,9 @@
+---
+---
+// Changed: make this file a Jekyll SCSS entry + import theme main
+@import "main";
+
+// Changed: your overrides
 .post-content {
   font-size: 19px;
   line-height: 1.9;
