@@ -12,3 +12,28 @@
 .content h2 {
   margin-top: 2rem;
 }
+
+@media all and (max-width: 1199px) {
+  #panel-wrapper { display: block !important; }
+}
+
+/* Changed: Remove bullets + fix alignment in sidebar nav */
+#sidebar ul {
+  list-style: none !important;
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+}
+
+#sidebar ul li {
+  list-style: none !important;
+  padding-left: 0 !important;
+}
+
+#sidebar ul li::marker { // Changed
+  content: "" !important;
+}
+
+/* Changed: Make sure right panel never disappears */
+#panel-wrapper { // Changed
+  display: block !important;
+}
