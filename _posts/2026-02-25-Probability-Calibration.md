@@ -42,7 +42,10 @@ Why Logistic Regression?
 Formula
 -------------
 The Calibrated Probability is defined as:  
+<div align="center">
 #### $$ p = \frac{1}{1+\exp(As+B)} $$
+</div>
+
 - Where A and B are parameters to learn
 - s is the original model output score
 
