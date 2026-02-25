@@ -18,7 +18,7 @@ In the real world, that gap matters. If the model says 70%, then about 70 out of
 
 Mathematical Operations
 -------------
-$$ E[Y\mid\hat{p}] = \hat{p} $$
+#### $$ E[Y\mid\hat{p}] = \hat{p} $$
 
 What this means: When you collect all cases where the model predicted probability $\hat{p}$, the actual outcome (true positive rate) should be $\hat{p}$. For example, if the model predicts 70% chance of blue balls in the box, then about 70% of those balls should actually be blue. This is perfect calibration — predicted probabilities match reality.
 
@@ -41,15 +41,15 @@ Why Logistic Regression?
 
 Formula
 -------------
-The Calibrated Probability is defined as:
-$$ p = \frac{1}{1+\exp(As+B)} $$
+The Calibrated Probability is defined as:  
+#### $$ p = \frac{1}{1+\exp(As+B)} $$
 - Where A and B are parameters to learn
 - s is the original model output score
 
 How to learn A and B?
 -------------
-Since we use logistic regression, A and B are trained by minimizing logistic loss, defined as below:
-$$ L(A,B) = -\sum_{i=1}^{n} [y_i\log p_i + (1-y_i)\log(1-p_i)] $$
+Since we use logistic regression, A and B are trained by minimizing logistic loss, defined as below:  
+#### $$ L(A,B) = -\sum_{i=1}^{n} [y_i\log p_i + (1-y_i)\log(1-p_i)] $$
 
 How to apply?
 -------------
