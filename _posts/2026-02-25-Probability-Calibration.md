@@ -48,7 +48,9 @@ $$ p = \frac{1}{1+\exp(As+B)} $$
 How to learn A and B?
 -------------
 Since we use logistic regression, A and B are trained by minimizing logistic loss, defined as below:
-$$ L(A,B) = -\sum_{i=1}^{n} [y_i\log p_i + (1-y_i)\log(1-p_i)] $$
+$$
+L(A,B) = -\sum_{i=1}^{n} [y_i\log p_i + (1-y_i)\log(1-p_i)] 
+$$
 
 How to apply?
 -------------
