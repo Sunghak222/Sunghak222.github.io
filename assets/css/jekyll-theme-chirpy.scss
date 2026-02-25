@@ -1,39 +1,39 @@
----
----
-// Changed: make this file a Jekyll SCSS entry + import theme main
-@import "main";
+// ---
+// ---
+// // Changed: make this file a Jekyll SCSS entry + import theme main
+// @import "main";
 
-// Changed: your overrides
-.content {
-  font-size: 19px;
-  line-height: 1.9;
-}
+// // Changed: your overrides
+// .content {
+//   font-size: 19px;
+//   line-height: 1.9;
+// }
 
-.content h2 {
-  margin-top: 2rem;
-}
+// .content h2 {
+//   margin-top: 2rem;
+// }
 
-@media all and (max-width: 1199px) {
-  #panel-wrapper { display: block !important; }
-}
+// @media all and (max-width: 1199px) {
+//   #panel-wrapper { display: block !important; }
+// }
 
-/* Changed: Remove bullets + fix alignment in sidebar nav */
-#sidebar ul {
-  list-style: none !important;
-  padding-left: 0 !important;
-  margin-left: 0 !important;
-}
+// /* Changed: Remove bullets + fix alignment in sidebar nav */
+// #sidebar ul {
+//   list-style: none !important;
+//   padding-left: 0 !important;
+//   margin-left: 0 !important;
+// }
 
-#sidebar ul li {
-  list-style: none !important;
-  padding-left: 0 !important;
-}
+// #sidebar ul li {
+//   list-style: none !important;
+//   padding-left: 0 !important;
+// }
 
-#sidebar ul li::marker { // Changed
-  content: "" !important;
-}
+// #sidebar ul li::marker { // Changed
+//   content: "" !important;
+// }
 
-/* Changed: Make sure right panel never disappears */
-#panel-wrapper { // Changed
-  display: block !important;
-}
+// /* Changed: Make sure right panel never disappears */
+// #panel-wrapper { // Changed
+//   display: block !important;
+// }
