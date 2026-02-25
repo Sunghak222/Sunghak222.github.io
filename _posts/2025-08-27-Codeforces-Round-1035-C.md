@@ -10,9 +10,7 @@ math: true
 
 You are given four integers: n, l, r, and k.
 You need to find the k-th element of an lexicographically smallest array a of length n that satisfies the following condition:
-$$
-a_1\mathbin{\&}a_2\mathbin{\&}...\mathbin{\&}a_n=a_1 \oplus a_2 \oplus...\oplus a_n
-$$
+$$ a_1\mathbin{\&}a_2\mathbin{\&}...\mathbin{\&}a_n=a_1 \oplus a_2 \oplus...\oplus a_n $$
 
 Where & = bitwise AND and ⊕ = bitwise XOR.
 If there is no possible array, print -1.
@@ -24,7 +22,7 @@ If there is no possible array, print -1.
 - $$ 1 \leq k \leq n $$
 
 ## My Journey
-1. Initial Observations
+1. Initial Observations  
 When n is odd, the array should always be {l...}.
 - Applying the AND operation on the same number does not change the value.
   - ex) $$ 3\mathbin{\&}3\mathbin{\&}3\mathbin{\&}3=3 $$
@@ -32,16 +30,16 @@ When n is odd, the array should always be {l...}.
   - ex) $$ 3 \oplus 3 \oplus 3 = 3 $$
 - So, you should choose l, which is the smallest number, to get lexicographically smallest array.
    
-2.  Hypothesis When n is Even
+1.  Hypothesis When n is Even  
 When n is even, it was not that simple. I initially approached with Most Significant Bit (MSB) of l and r.
 Hypothesis:
 - if MSB(l) != MSB(r), there exists a valid array.
-- else if MSB(l) == MSB(r), the MSB of both l and r is 1, which means all the numbers $r_i$ between l and r have the same MSB. $r_i$ cannot satisfy $$r_i\mathbin{\&}r_{i+1} = r_i \oplus r_{i+1}$$ because $1 \mathbin{\&} 1 = 1$ and $1 \oplus 1 = 0$
+- else if MSB(l) == MSB(r), the MSB of both l and r is 1, which means all the numbers $r_i$ between l and r have the same MSB. $r_i$ cannot satisfy $$ r_i \mathbin{\&} r_{i+1} = r_i \oplus r_{i+1} $$ because $ 1 \mathbin{\&} 1 = 1$ and $1 \oplus 1 = 0 $
 
-3. Challenge
+1. Challenge  
 I could not figure out how to find the lexicographically smallest array when n is even and MSB(l) != MSB(r). I was only one step behind the answer. Let's continue.
 
-4. Wrong Approach
+1. Wrong Approach  
 My first idea for even n was to take
 $$ [a,a,...,a,a-1,a-1,...,a-1] $$ with exactly $\frac{n}{2}$ copies of each.
 I thought this would always make XOR = 0 and also make AND = 0.
