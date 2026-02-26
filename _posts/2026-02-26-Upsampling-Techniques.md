@@ -101,7 +101,7 @@ In a 2D space, suppose:
 
 If ($\lambda = 0.3$), then:
 
-![SMOTE interpolation example](./images/smote-example.png)
+![SMOTE interpolation example](/images/smote-example.png)
 
 The new point lies between A and B.
 
