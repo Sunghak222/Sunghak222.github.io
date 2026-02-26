@@ -101,8 +101,6 @@ In a 2D space, suppose:
 
 If ($\lambda = 0.3$), then:
 
-![SMOTE interpolation example](/assets/images/smote-example.png)
-
 The new point lies between A and B.
 
 Instead of stacking identical points, SMOTE **thickens the minority region in feature space**, allowing the classifier to form a broader and more stable decision boundary.
