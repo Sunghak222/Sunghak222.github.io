@@ -2,7 +2,7 @@
 title: "Probability Calibration"
 date: 2026-02-25
 layout: post
-categories: [Data Science, Concepts]
+categories: [Data Science]
 tags: [Probability]
 math: true
 ---
